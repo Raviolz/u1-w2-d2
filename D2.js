@@ -1,20 +1,35 @@
-/* ESERCIZIO 1
- Scrivi un algoritmo per trovare il più grande tra due numeri interi.
-*/
+/* ESERCIZIO 1 Scrivi un algoritmo per trovare il più grande tra due numeri interi.
+ */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let numb1 = 3;
+let numb2 = 8;
+
+if (numb1 > numb2) {
+  console.log(numb1, "è il più grande tra i due numeri");
+} else {
+  console.log(numb2, "è il più grande tra i due numeri");
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
+let numero = prompt("inserisci un numero");
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (numero !== 5) {
+  console.log("not equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
+let number = prompt("inserisci un numero");
+/*Mancherebbe forse di tramutare stringa in numero ma funziona comunque */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (number % 5 === 0) {
+  console.log("divisibile per 5");
+} else {
+  console.log("da resto");
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -76,10 +91,10 @@
 */
 
 const me = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
-}
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+};
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
