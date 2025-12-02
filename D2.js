@@ -13,7 +13,7 @@ if (numb1 > numb2) {
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
-/*
+
 let numero = prompt("inserisci un numero");
 
 if (numero !== 5) {
@@ -24,10 +24,9 @@ if (numero !== 5) {
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-/*
 let number = prompt("inserisci un numero");
 /*Mancherebbe forse di tramutare stringa in numero ma funziona comunque */
-/*
+
 if (number % 5 === 0) {
   console.log("divisibile per 5");
 } else {
@@ -139,17 +138,16 @@ if (num % 2 === 0) {
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
-*/
+ */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let val = 12;
+if (val < 5) {
+  console.log("Minore di 5");
+} else if (val < 10) {
+  console.log("Minore di 10");
+} else {
+  console.log("Uguale o maggiore di 10");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -161,28 +159,41 @@ const me = {
   skills: ["javascript", "html", "css"],
 };
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto";
+console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.skills.pop();
+console.log(me);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
+let avuoto = [];
+avuoto.push(1);
+avuoto.push(2);
+avuoto.push(3);
+avuoto.push(4);
+avuoto.push(5);
+avuoto.push(6);
+avuoto.push(7);
+avuoto.push(8);
+avuoto.push(9);
+avuoto.push(10);
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log(avuoto);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+avuoto.splice(9, 1, 100);
+console.log(avuoto);
